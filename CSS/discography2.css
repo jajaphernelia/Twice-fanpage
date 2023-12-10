@@ -1,0 +1,446 @@
+*{
+	box-sizing:border-box;
+}
+.clear{
+	clear:both;
+}
+@font-face{
+	font-family:"abrilfatface";
+	src:url("../fonts/AbrilFatface-Regular.ttf")
+}
+@font-face{
+	font-family:"alefbold";
+	src:url("../fonts/Alef-Bold.ttf")
+}
+@font-face{
+	font-family:"alegreya";
+	src:url("../fonts/AlegreyaSansSC-Black.ttf")
+}
+@font-face{
+	font-family:"alef";
+	src:url("../fonts/Alef-Regular.ttf")
+}
+body {
+	margin:0px;
+	background-color:#0f0f0f;
+}
+.head{
+	background-color:black;
+	position: fixed;
+	padding:10px;
+	width: 100%;
+	top: 0;
+}
+header::after{
+	content:'';
+	display:table;
+	clear:both;
+}
+.head input[type=text] {
+	float:right;
+	padding:6px;
+	border:none;
+	margin-top:8px;
+	margin-left:50px;
+	font-size:17px;
+}
+.container {
+	width:80%;
+	margin:0px;
+	box-shadow: white 2px 120px;
+}
+.logo {
+	float:left;
+	padding:10px;
+	position:fixed;
+	z-index:99;
+}
+.logo:hover{
+	cursor:pointer;
+	opacity: 0.7;
+}
+nav {
+	font-family:"alegreya";
+	float:right;
+}
+nav ul {
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+nav li{
+	display:inline-block;
+	margin-left:70px;
+	padding-top:20px;
+	position:relative;
+
+}
+nav a{
+	color:#a68137;
+	text-decoration:none;
+	font-size:20px;
+}
+a:hover {
+	color:#825c0d;
+}
+nav a::before{
+	content:'';
+	display:block;
+	height:5px;
+	background-color:#825c0d;
+	position:absolute;
+	top:0;
+	width:0;
+	
+	transition: all ease-in-out 250ms;
+}
+nav a:hover:before{
+	width:100%;
+}
+h1{
+	font-family:"abrilfatface"; 
+	font-weight: normal; 
+	font-style: normal;
+	color:#a68137;
+	padding-top:6%;
+	text-align:center;
+	text-shadow: 1px 1px #000;
+	
+}
+h3,h4 {
+	font-family:"alef"; 
+	font-weight: bold; 
+	font-style: normal;
+	color:#a68137;
+	padding-top:0;
+	text-shadow: 1px 1px #000;
+	text-align:center;
+} 
+.album1 {
+	width:95%;
+	display:block;
+	margin:auto;
+	border:2px solid black;
+	border-collapse:collapse;
+	border-radius:5px;
+	
+}
+.albumtitle{
+	font-family:"alegreya"; 
+	font-weight: normal; 
+	font-style: normal;
+	color:#a68137;
+	text-align:center;
+	text-shadow: 1px 1px #000;
+}
+.album1 th, .album1 td{
+	width:13%;
+	border: 2px solid black;
+}
+.album1 tr{
+	background-color:#E8D5AD;
+}
+.thestorybegins{
+	margin-left:9%;
+	border-radius:5px;
+	box-shadow: 4px 4px white;
+	position:block;
+}
+.pagetwo{
+	margin-left:9%;
+	margin-top:7%;
+	border-radius:5px;
+	box-shadow: 4px 4px white;
+	
+}
+.twicecoasterlane1{
+	margin-left:9%;
+	margin-top:7%;
+	border-radius:5px;
+	box-shadow: 4px 4px white;
+}
+.twicecoasterlane2{
+	margin-left:-1%;
+	margin-top:20%;
+	border-radius:5px;
+	box-shadow: 4px 4px white;
+}
+.thestorybegins:hover{
+	opacity:0.4;
+	cursor:pointer;
+}
+.pagetwo:hover{
+	opacity:0.4;
+	cursor:pointer;
+}
+.twicecoasterlane1:hover{
+	opacity:0.4;
+	cursor:pointer;
+}
+.twicecoasterlane2:hover{
+	opacity:0.4;
+	cursor:pointer;
+}
+.album2 {
+	width:95%;
+	display:block;
+	margin:auto;
+	border:2px solid black;
+	border-collapse:collapse;
+	border-radius:5px;
+	
+}
+.album2 th, .album2 td{
+	width:13%;
+	border: 2px solid black;
+}
+.album2 tr{
+	background-color:#E8D5AD;
+}
+.signal{
+	margin-left:9%;
+	margin-top:-54%;
+	border-radius:5px;
+	box-shadow: 4px 4px white;
+}
+.twicetagram{
+	margin-left:9%;
+	margin-top:-7%;
+	border-radius:5px;
+	box-shadow: 4px 4px white;
+	
+}
+.merryhappy{
+	margin-left:9%;
+	margin-top:7%;
+	border-radius:5px;
+	box-shadow: 4px 4px white;
+}
+.whatislove{
+	margin-left:9%;
+	margin-top:-55%;
+	border-radius:5px;
+	box-shadow: 4px 4px white;
+}
+.signal:hover{
+	opacity:0.4;
+	cursor:pointer;
+}
+.twicetagram:hover{
+	opacity:0.4;
+	cursor:pointer;
+}
+.merryhappy:hover{
+	opacity:0.4;
+	cursor:pointer;
+}
+.whatislove:hover{
+	opacity:0.4;
+	cursor:pointer;
+}
+.album3{
+	width:95%;
+	display:block;
+	margin:auto;
+	border:2px solid black;
+	border-collapse:collapse;
+	border-radius:5px;
+	
+}
+.album3 th, .album3 td{
+	width:15%;
+	border: 2px solid black;
+}
+.album3 tr{
+	background-color:#E8D5AD;
+}
+.summernights{
+	margin-left:9%;
+	border-radius:5px;
+	box-shadow: 4px 4px white;
+}
+.bdz{
+	margin-left:9%;
+	margin-top:7%;
+	border-radius:5px;
+	box-shadow: 4px 4px white;
+	
+}
+.yesoryes{
+	margin-left:9%;
+	margin-top:-11%;
+	border-radius:5px;
+	box-shadow: 4px 4px white;
+}
+.theyearofyes{
+	margin-left:9%;
+	margin-top:2%;
+	border-radius:5px;
+	box-shadow: 4px 4px white;
+}
+.summernights:hover{
+	opacity:0.4;
+	cursor:pointer;
+}
+.bdz:hover{
+	opacity:0.4;
+	cursor:pointer;
+}
+.yesoryes:hover{
+	opacity:0.4;
+	cursor:pointer;
+}
+.theyearofyes:hover{
+	opacity:0.4;
+	cursor:pointer;
+}
+.album4 {
+	width:95%;
+	display:block;
+	margin:auto;
+	border:2px solid black;
+	border-collapse:collapse;
+	border-radius:5px;
+	
+}
+.album4 th, .album4 td{
+	width:15%;
+	border: 2px solid black;
+}
+.album4 tr{
+	background-color:#E8D5AD;
+}
+.fancy{
+	margin-left:30%;
+	border-radius:5px;
+	box-shadow: 4px 4px white;
+}
+.feelspecial{
+	margin-left:30%;
+	margin-top:3%;
+	border-radius:5px;
+	box-shadow: 4px 4px white;
+	
+}
+.fancy:hover{
+	opacity:0.4;
+	cursor:pointer;
+}
+.feelspecial:hover{
+	opacity:0.4;
+	cursor:pointer;
+}
+.main-div {
+	width:100%;
+	height:auto;
+	margin-top:10px;
+	background:#000;
+	padding:20px 0px;
+}
+.social-icons{
+	width:100%;
+	height:auto;
+	margin:auto;
+}
+.social-icons ul{
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+.social-icons li:hover{
+	background-color:#E8D5AD;
+}
+.social-icons ul li{
+	display:inline-block;
+	width:50px;
+	height:50px;
+	margin:0px 10px;
+	border-radius:100%;
+	background-color:white;
+}
+.social-icons ul li a{
+	color:#a68137;
+	font-size:25px;
+}
+.social-icons ul li a i {
+	line-height:50px;
+}
+
+.menu {
+	width:100%;
+	height:auto;
+	margin:auto;
+	background-color:#000;
+}
+.menu ul {
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+.menu ul li {
+	display:inline-block;
+	margin: 0px 25px;
+}
+.menu ul li a{
+	font-family:"alegreya";
+	font-size:20px;
+	font-weight:500px;
+	color:#a68137;
+}
+a{
+	text-decoration:none;
+}
+.menu2 {
+	width:100%;
+	height:60px;
+	margin:auto;
+	background-color:#000;
+}
+.menu2 ul {
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+.menu2 ul li {
+	display:inline-block;
+	margin: 0px 23px;
+}
+.menu2 ul li a{
+	font-family:"alegreya";
+	font-size:20px;
+	font-weight:500px;
+	color:#a68137;
+	margin-left:-5px;
+}
+.copyright{
+	color:#a68137;
+	font-family:"alef";
+	text-align:center;
+}
+
+@media (max-width:600px){
+	
+	.logo{
+		position:unset;
+		margin-left:150px;
+	}
+	
+	nav li{
+		display:inline-block;
+		margin-left:10px;
+	}
+	nav{
+		
+	}
+	nav a{
+		font-size:15px;
+		margin-right:-15px;
+		padding-right:10px;
+	}
+	.menu2{
+		height:90px;
+	}
+	
+	
+	
+}

@@ -1,0 +1,692 @@
+*{
+	box-sizing:border-box;
+}
+.clear{
+	clear:both;
+}
+@font-face{
+	font-family:"abrilfatface";
+	src:url("../fonts/AbrilFatface-Regular.ttf")
+}
+@font-face{
+	font-family:"alefbold";
+	src:url("../fonts/Alef-Bold.ttf")
+}
+@font-face{
+	font-family:"alegreya";
+	src:url("../fonts/AlegreyaSansSC-Black.ttf")
+}
+@font-face{
+	font-family:"alef";
+	src:url("../fonts/Alef-Regular.ttf")
+}
+body {
+	margin:0px;
+	background-color:#0f0f0f;
+}
+.head{
+	background-color:black;
+	position: fixed;
+	padding:10px;
+	width: 100%;
+	top: 0;
+}
+header::after{
+	content:'';
+	display:table;
+	clear:both;
+}
+.head input[type=text] {
+	float:right;
+	padding:6px;
+	border:none;
+	margin-top:8px;
+	margin-left:50px;
+	font-size:17px;
+}
+.container {
+	width:80%;
+	margin:0px;
+	box-shadow: white 2px 120px;
+}
+.logo {
+	float:left;
+	padding:10px;
+	position:fixed;
+	z-index:99;
+}
+.logo:hover{
+	cursor:pointer;
+	opacity: 0.7;
+}
+nav {
+	font-family:"alegreya";
+	float:right;
+}
+nav ul {
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+nav li{
+	display:inline-block;
+	margin-left:70px;
+	padding-top:20px;
+	position:relative;
+
+}
+nav a{
+	color:#a68137;
+	text-decoration:none;
+	font-size:20px;
+}
+a:hover {
+	color:#825c0d;
+}
+nav a::before{
+	content:'';
+	display:block;
+	height:5px;
+	background-color:#825c0d;
+	position:absolute;
+	top:0;
+	width:0;
+	
+	transition: all ease-in-out 250ms;
+}
+nav a:hover:before{
+	width:100%;
+}
+.title {
+	font-family: "abrilfatface"; 
+	font-weight: normal; 
+	font-style: normal;
+	color:#a68137;
+	padding-top:6%;
+	text-shadow: 1px 1px #000;
+}
+.desc{
+	font-family:"abrilfatface"; 
+	font-weight: normal; 
+	font-style: normal;
+	color:#a68137;
+}
+/* Jihyo */
+.jihyo {
+	margin:0px 20px 10px 20px;
+	border-radius:100%;
+	float:left;
+}
+.jihyo:hover{
+	opacity:0.4;
+	cursor:pointer;
+}
+.jihyoname{
+	font-family:"alegreya";
+	font-weight:bold;
+	padding-top:7px;
+	padding:10px;
+	color:black;
+}
+.bgparkjihyo{
+	background-color:#a68137;
+	width:6%;
+	height:auto;
+	margin-left:25%;
+	border-radius:5px;
+}
+.bgparkjihyo:hover{
+	opacity:0.4;
+	cursor:pointer;
+}
+.jihyopersonal {
+	font-family:"alef"; 
+	font-weight: bold; 
+	font-style: normal;
+	color:#a68137;
+}
+/* Nayeon */
+.nayeon {
+	margin:0px 20px 10px 20px;
+	border-radius:100%;
+	float:right;
+}
+.nayeon:hover{
+	opacity:0.4;
+	cursor:pointer;
+}
+.bgimnayeon:hover{
+	opacity:0.4;
+	cursor:pointer;
+}
+.nayeonname{
+	font-family:"alegreya";
+	font-weight:bold;
+	float:right;
+	color:black;
+	padding:2px;
+}
+.bgimnayeon{
+	background-color:#a68137;
+	width:7%;
+	float:right;
+	height:auto;
+	border-radius:5px;
+}
+.nayeonpersonal{
+	font-family:"alef"; 
+	font-weight: bold; 
+	font-style: normal;
+	color:#a68137;
+	float:right;
+	margin-left:500px;
+	text-align:right;
+	margin-top:0;
+}
+/* Jeongyeon */
+.jeongyeon {
+	margin:0px 20px 10px 20px;
+	border-radius:100%;
+	float:left;
+}
+.jeongyeon:hover{
+	opacity:0.4;
+	cursor:pointer;
+}
+.jeongyeonname{
+	font-family:"alegreya";
+	font-weight:bold;
+	padding-top:7px;
+	padding:10px;
+	color:black;
+}
+.bgjeongyeon{
+	background-color:#a68137;
+	width:10.5%;
+	height:auto;
+	margin-left:25%;
+	border-radius:5px;
+	margin-top:30px;
+}
+.bgjeongyeon:hover{
+	opacity:0.4;
+	cursor:pointer;
+}
+.jeongyeonpersonal {
+	font-family:"alef"; 
+	font-weight: bold; 
+	font-style: normal;
+	color:#a68137;
+	margin-top:10px;
+}
+/* Momo */
+.momo{
+	margin:0px 20px 10px 20px;
+	border-radius:100%;
+	float:right;
+}
+.momo:hover{
+	opacity:0.4;
+	cursor:pointer;
+}
+.bgmomo:hover{
+	opacity:0.4;
+	cursor:pointer;
+}
+.momoname{
+	font-family:"alegreya";
+	font-weight:bold;
+	float:right;
+	color:black;
+	padding:2px;
+}
+.bgmomo{
+	background-color:#a68137;
+	width:5.5%;
+	float:right;
+	height:auto;
+	border-radius:5px;
+}
+.momopersonal{
+	font-family:"alef"; 
+	font-weight: bold; 
+	font-style: normal;
+	color:#a68137;
+	float:right;
+	margin-left:500px;
+	text-align:right;
+	margin-top:0;
+}
+/* Sana */
+.sana {
+	margin:0px 20px 10px 20px;
+	border-radius:100%;
+	float:left;
+}
+.sana:hover{
+	opacity:0.4;
+	cursor:pointer;
+}
+.sananame{
+	font-family:"alegreya";
+	font-weight:bold;
+	padding-top:7px;
+	color:black;
+}
+.bgsana{
+	background-color:#a68137;
+	width:5.5%;
+	height:auto;
+	margin-left:25%;
+	border-radius:5px;
+	margin-top:30px;
+}
+.bgsana:hover{
+	opacity:0.4;
+	cursor:pointer;
+}
+.sanapersonal {
+	font-family:"alef";
+	font-weight:bold;
+	font-style: normal;
+	color:#a68137;
+	margin-top:0;
+}
+/* Mina */
+.mina{
+	margin:0px 20px 10px 20px;
+	border-radius:100%;
+	float:right;
+}
+.mina:hover{
+	opacity:0.4;
+	cursor:pointer;
+}
+.bgmina:hover{
+	opacity:0.4;
+	cursor:pointer;
+}
+.minaname{
+	font-family:"alegreya";
+	font-weight:bold;
+	float:right;
+	color:black;
+	padding:2px;
+}
+.bgmina{
+	background-color:#a68137;
+	width:4.5%;
+	float:right;
+	height:auto;
+	border-radius:5px;
+}
+.minapersonal{
+	font-family:"alef"; 
+	font-weight: bold; 
+	font-style: normal;
+	color:#a68137;
+	float:right;
+	margin-left:500px;
+	text-align:right;
+	margin-top:0;
+}
+/* Dahyun */
+.dahyun {
+	margin:0px 20px 10px 20px;
+	border-radius:100%;
+	float:left;
+}
+.dahyun:hover{
+	opacity:0.4;
+	cursor:pointer;
+}
+.dahyunname{
+	font-family:"alegreya";
+	font-weight:bold;
+	padding-top:7px;
+	color:black;
+}
+.bgdahyun{
+	background-color:#a68137;
+	width:8%;
+	height:auto;
+	margin-left:25%;
+	border-radius:5px;
+	margin-top:30px;
+}
+.bgdahyun:hover{
+	opacity:0.4;
+	cursor:pointer;
+}
+.dahyunpersonal {
+	font-family:"alef";
+	font-weight:bold;
+	font-style: normal;
+	color:#a68137;
+	margin-top:0;
+}
+/* Chaeyoung */
+.chae {
+	margin:0px 20px 10px 20px;
+	border-radius:100%;
+	float:right;
+}
+.chae:hover{
+	opacity:0.4;
+	cursor:pointer;
+}
+.bgchae:hover{
+	opacity:0.4;
+	cursor:pointer;
+}
+.chaename{
+	font-family:"alegreya";
+	font-weight:bold;
+	float:right;
+	color:black;
+	padding:4px;
+}
+.bgchae{
+	background-color:#a68137;
+	width:10.5%;
+	float:right;
+	height:auto;
+	border-radius:5px;
+}
+.chaepersonal{
+	font-family:"alef"; 
+	font-weight: bold; 
+	font-style: normal;
+	color:#a68137;
+	float:right;
+	margin-left:500px;
+	text-align:right;
+	margin-top:0;
+}
+/* Tzuyu */
+.tzuyu{
+	margin:0px 20px 10px 20px;
+	border-radius:100%;
+	float:left;
+}
+.tzuyu:hover{
+	opacity:0.4;
+	cursor:pointer;
+}
+.tzuyuname{
+	font-family:"alegreya";
+	font-weight:bold;
+	padding-top:7px;
+	padding:10px;
+	color:black;
+}
+.bgtzuyu{
+	background-color:#a68137;
+	width:6.5%;
+	height:auto;
+	margin-left:25%;
+	border-radius:5px;
+	margin-top:25px;
+}
+.bgtzuyu:hover{
+	opacity:0.4;
+	cursor:pointer;
+}
+.tzuyupersonal{
+	font-family:"alef";
+	margin-top:-2.5%;
+	font-weight: bold; 
+	font-style: normal;
+	color:#a68137;
+}
+.main-div {
+	width:100%;
+	height:auto;
+	margin-top:10px;
+	background:#000;
+	padding:20px 0px;
+}
+.social-icons{
+	width:100%;
+	height:auto;
+	margin:auto;
+}
+.social-icons ul{
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+.social-icons li:hover{
+	background-color:#E8D5AD;
+}
+.social-icons ul li{
+	display:inline-block;
+	width:50px;
+	height:50px;
+	margin:0px 10px;
+	border-radius:100%;
+	background-color:white;
+}
+.social-icons ul li a{
+	color:#a68137;
+	font-size:25px;
+}
+.social-icons ul li a i {
+	line-height:50px;
+}
+
+.menu {
+	width:100%;
+	height:auto;
+	margin:auto;
+	background-color:#000;
+}
+.menu ul {
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+.menu ul li {
+	display:inline-block;
+	margin: 0px 25px;
+}
+.menu ul li a{
+	font-family:"alegreya";
+	font-size:20px;
+	font-weight:500px;
+	color:#a68137;
+}
+a{
+	text-decoration:none;
+}
+.menu2 {
+	width:100%;
+	height:60px;
+	margin:auto;
+	background-color:#000;
+}
+.menu2 ul {
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+.menu2 ul li {
+	display:inline-block;
+	margin: 0px 23px;
+}
+.menu2 ul li a{
+	font-family:"alegreya";
+	font-size:20px;
+	font-weight:500px;
+	color:#a68137;
+	margin-left:-5px;
+}
+.copyright{
+	color:#a68137;
+	font-family:"alef";
+	text-align:center;
+}
+@media (max-width:600px){
+	
+	.logo{
+		position:unset;
+		margin-left:150px;
+	}
+	
+	nav li{
+		display:inline-block;
+		margin-left:10px;
+	}
+	nav{
+		
+	}
+	nav a{
+		font-size:15px;
+		margin-right:-15px;
+		padding-right:10px;
+	}
+	
+	.title{
+		margin-top:100px;
+	}
+	.jihyo{
+		float:none;
+		display:block;
+		margin:auto;
+	}
+	.bgparkjihyo{
+		width:17%;
+		margin:auto;
+		display:block;
+	}
+	.jihyopersonal{
+		margin-left:10px;
+	}
+	
+	.nayeon{
+		float:none;
+		display:block;
+		margin:auto;	
+	}
+	.bgimnayeon{
+		width:20%;
+		float:left;
+		margin-left:200px;
+		margin-top:20px;
+	}
+	.nayeonpersonal{
+		margin-left:10px;
+		text-align:left;
+	}
+	
+	.jeongyeon{
+		display:block;
+		float:none;
+		margin:auto;
+	}
+	
+	.bgjeongyeon{
+		margin:auto;
+		display:block;
+		width:30%;
+	}
+	
+	.jeongyeonpersonal{
+			
+		margin-left:10px;
+	}
+	.momo {
+		float:none;
+		display:block;
+		margin:auto;
+	}
+	.bgmomo{
+		width:15%;
+		float:left;
+		margin-left:200px;
+		margin-top:20px;
+	}
+	.momopersonal{
+		margin-left:10px;
+		text-align:left;
+	}
+	.sana{
+		float:none;
+		display:block;
+		margin:auto;	
+	}
+	.bgsana{
+		width:14%;
+		float:none;
+		margin-left:200px;
+		margin-top:25px;
+	}
+	.sanapersonal{
+		margin-left:10px;
+		text-align:left;
+	}
+	.mina {
+		float:none;
+		display:block;
+		margin:auto;
+	}
+	.bgmina{
+		width:13%;
+		float:left;
+		margin-left:200px;
+		margin-top:20px;
+	}
+	.minapersonal{
+		margin-left:10px;
+		text-align:left;
+	}
+	.dahyun{
+		float:none;
+		display:block;
+		margin:auto;	
+	}
+	.bgdahyun{
+		width:20%;
+		float:none;
+		margin-left:180px;
+		margin-top:25px;
+	}
+	.dahyunpersonal{
+		margin-left:10px;
+		text-align:left;
+	}
+	.chae {
+		float:none;
+		display:block;
+		margin:auto;
+	}
+	.bgchae{
+		width:30%;
+		float:left;
+		margin-left:180px;
+		margin-top:20px;
+	}
+	.chaepersonal{
+		float:left;
+		margin-left:10px;
+		text-align:left;
+	}
+	.tzuyu{
+		float:none;
+		display:block;
+		margin:auto;	
+	}
+	.bgtzuyu{
+		width:18%;
+		float:none;
+		margin-left:200px;
+		margin-top:25px;
+	}
+	.tzuyupersonal{
+		margin-left:10px;
+		text-align:left;
+	}
+	.menu2{
+		height:90px;
+	}
+}
